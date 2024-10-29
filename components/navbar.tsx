@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import React from 'react';
+import SearchBar from './searchbar';
 
 const Navbar = () => {
   const isLoggedIn = false; 
@@ -22,6 +23,7 @@ const Navbar = () => {
       </h1>
 
       <div className="flex items-center space-x-4">
+        <SearchBar/>
         {isLoggedIn ? (
         <>
         <button className="bg-orange-300 text-slate-900 px-4 py-1 rounded hover:bg-orange-400 transition">
